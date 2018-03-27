@@ -1,0 +1,75 @@
+<script> 
+    var fileReader = new FileReader; 
+    var compress_height, compress_width; 
+    var file; 
+    var imageRead; 
+    var image; 
+</script> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>    
+  
+    <!-- Para correr Croppie--> 
+  <link rel='stylesheet prefetch' href='http://foliotek.github.io/Croppie/croppie.css'>
+      
+</head>
+<body>
+
+<div class="content-wrap">
+    <h1>Image Compressor</h1>
+    <!-- AL dar click sobre el id actionCrop, se obtiene la imagen cortada.-->     
+     <button class="btn" id="actionCrop">Cortar</button>    
+     <button class="btn" id="cambiar-a-cuadrada">Imagen Cuadrada</button>    
+     <button class="btn" id="cambiar-a-vertical">Imagen Vertical</button>    
+     <button class="btn" id="cambiar-a-horizontal">Imagen Horizontal</button>   
+      <input type="file" id="croppie_input" value="Choose Image" accept="image/*">
+
+
+    <div class="compressed-img">
+        <h2>Compressed Image</h2>
+        <img src="img/placeholder.png" alt="Compressed image" title="Compressed image" id="result">
+    </div>
+
+</div>
+
+<div id="" style="background-color: ;" class="row">
+   <div class="col-sm-2" style="background-color: ;">   
+      <!--En main cropper se carga el preview de la imagen seleccionada-->
+     <div id="main-cropper" style=""></div>
+   </div>
+</div>
+
+
+<!-- Para croppie-->
+<script src='http://foliotek.github.io/Croppie/croppie.js'></script>
+<script  src="js/index-croppie.js"></script>
+
+
+<script src="image-compressor.js"></script>
+<script src="index-compressor.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-103168679-1', 'auto');
+    ga('send', 'pageview');
+
+
+
+
+      
+        
+    
+
+
+</script>
+
+</body>
+</html>
