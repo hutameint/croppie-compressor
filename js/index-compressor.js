@@ -1,16 +1,5 @@
 
 
-    var compressor = new ImageCompressor,                        
-        thresholdVal = 'initial',
-        width = croppie_inner_width * 2 ,
-        height = croppie_inner_height * 2, 
-        filter,
-        postEffect; 
-
-
-
-
-
 
     /*
     widthEl.addEventListener('input', function (e) {
@@ -24,6 +13,7 @@
 
     function compressImage()
     {
+        var compressor = new ImageCompressor; 
         var settings;        
         width = compress_width; 
         height = compress_height; 
